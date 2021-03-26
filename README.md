@@ -1,4 +1,4 @@
 # desagil-joice
-Integrantes: n/
-Bruno Freitas do Nascimento Rodrigues n/
+Integrantes: <br>
+Bruno Freitas do Nascimento Rodrigues <br>
 Keiya Nishio
