@@ -19,8 +19,8 @@ class TestJoice {
 	private double pNb;
 	private double pTg;
 	private double pLi;
-  private static double DELTA = 0.05;
-  private CalculadoraCFC cCFC;
+  	private static double DELTA = 0.05;
+  	private CalculadoraCFC cCFC;
 	private CalculadoraCCC cCCC;
   
 	@BeforeEach
@@ -39,37 +39,37 @@ class TestJoice {
 		pTg = 183.84;
 		pLi = 6.94;
 		cCCC = new CalculadoraCCC("CCC"); 
-  }
-	
+	}
+
+
+	@Test
+	public void test1() {
+		assertEquals(8.57,cCCC.calcula(pNb,rNb),DELTA);
+	}
 	
 	@Test
 	public void test2() {
 		assertEquals(8.89, cCFC.calcula(pCu ,rCu), DELTA);
 	}
-	
-	@Test
-	public void test4() {
-		assertEquals(19.36, cCFC.calcula(pAu ,rAu), DELTA);
-	}
-	
-	@Test
-	public void test6() {
-		assertEquals(10.60, cCFC.calcula(pAg ,rAg), DELTA);
-  }
-  
-  @Test
-	public void test1() {
-		assertEquals(8.57,cCCC.calcula(pNb,rNb),DELTA);
-	}
-	
+
 	@Test
 	public void test3() {
 		assertEquals(19.28,cCCC.calcula(pTg,rTg),DELTA);
 	}
 	
 	@Test
+	public void test4() {
+		assertEquals(19.36, cCFC.calcula(pAu ,rAu), DELTA);
+	}
+
+	@Test
 	public void test5() {
 		assertEquals(0.53,cCCC.calcula(pLi,rLi),DELTA);
 	}
-
+	
+	@Test
+	public void test6() {
+		assertEquals(10.60, cCFC.calcula(pAg ,rAg), DELTA);
+  	}
+	
 }
