@@ -1,10 +1,10 @@
 package br.edu.insper.desagil.joice.model;
 
 public class CalculadoraCFC extends Calculadora {
-	
-	public CalculadoraCFC(String nome) {
-		super(nome);
+	public CalculadoraCFC() {
+		super("CFC");
 	}
+	
 	
 	
 	public double calcula(double peso, double raio) {

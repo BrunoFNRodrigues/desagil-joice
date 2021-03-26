@@ -2,9 +2,10 @@ package br.edu.insper.desagil.joice.model;
 
 public class CalculadoraCCC extends Calculadora {
 	
-	public CalculadoraCCC(String nome){
-		super(nome);
+	public CalculadoraCCC(){
+		super("CCC");
 	}
+	
 	
 	public double calcula(double peso, double raio) {
 		raio = raio*Math.pow(10, -7);

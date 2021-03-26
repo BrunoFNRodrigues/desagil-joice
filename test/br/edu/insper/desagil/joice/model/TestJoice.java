@@ -31,14 +31,14 @@ class TestJoice {
 		pCu = 63.55;
 		pAu = 196.97; 
 		pAg = 107.87;
-		cCFC = new CalculadoraCFC("CFC");
+		cCFC = new CalculadoraCFC();
 		rNb = 0.143;
 		rTg = 0.137;
 		rLi = 0.152;
 		pNb = 92.91;
 		pTg = 183.84;
 		pLi = 6.94;
-		cCCC = new CalculadoraCCC("CCC"); 
+		cCCC = new CalculadoraCCC(); 
 	}
 
 
@@ -72,4 +72,4 @@ class TestJoice {
 		assertEquals(10.60, cCFC.calcula(pAg ,rAg), DELTA);
   	}
 	
-}
+g}
