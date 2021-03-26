@@ -6,6 +6,7 @@ public class CalculadoraCCC extends Calculadora {
 		super("CCC");
 	}
 	
+	
 	public double calcula(double peso, double raio) {
 		raio = raio*Math.pow(10, -7);
 		double volume = Math.pow((4*raio/Math.sqrt(3)),3);

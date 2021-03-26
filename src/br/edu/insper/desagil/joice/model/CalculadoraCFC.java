@@ -6,6 +6,7 @@ public class CalculadoraCFC extends Calculadora {
 	}
 	
 	
+	
 	public double calcula(double peso, double raio) {
 		double Ma = (4*peso)/(6.023*Math.pow(10, 23));
 		raio = raio*Math.pow(10, -7);
